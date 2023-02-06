@@ -1,0 +1,1069 @@
+@font-face {
+  src: url("./fonts/RussianRail G Pro Bold.ttf");
+  src: url("./fonts/RussianRail G Pro Medium.ttf");
+  src: url("./fonts/RussianRail G Pro.ttf");
+  font-family: 'RussianRail G Pro', 'RussianRail G Pro Medium', 'RussianRail G Pro Bold';
+}
+
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  line-height: 1;
+  background: #F5F5F5;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+/* ------------------------------------ */
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  /* display: flex;
+  flex-direction: column; */
+  /* padding: 0 60px 0 58px; */
+}
+
+/* ------------------------------------ */
+.container {
+  max-width: 768px;
+  /*padding: 0 60px 0 58px;*/
+  margin: 0 auto;
+}
+
+/* @media (max-width: 1199px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+    padding: 0 15px;
+  }
+} */
+
+/*==========================================================================*/
+/*=========================== HEADER ===========================*/
+.header {
+  margin-top: 34px;
+  padding: 0 60px 0 58px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__right {
+  display: flex;
+  gap: 23px;
+  align-items: center;
+}
+
+.header__button {
+  padding: 10px 20px;
+  background: #E8331A;
+  border-radius: 5px;
+  border: 3px solid #E8331A;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.header__button:hover {
+  background: #F5F5F5;
+  color: #E8331A;
+  border: 3px solid #E8331A;
+}
+
+/*========================*/
+
+.header__content {
+  margin-top: 68px;
+}
+
+.header__title {
+  font-family: RussianRail G Pro, sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.header__text {
+  padding: 33px 0 16px 0;
+  max-width: 490px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.header__text_span {
+  font-weight: 700;
+}
+
+.header__foot {
+  display: flex;
+  gap: 13px;
+}
+
+.header__paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.header__subtext {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+}
+
+/*=========================== HERO ===========================*/
+
+.main {
+  padding: 0 60px 0 58px;
+}
+
+.hero {
+  margin-top: 65px;
+  height: 350px;
+  padding: 0 60px 0 58px;
+}
+
+.hero__img {
+  position: relative;
+  left: 179px;
+  bottom: 80px;
+}
+
+.hero__text {
+  max-width: 191px;
+  font-family: RussianRail G Pro, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.hero__text_span {
+  font-weight: 700;
+}
+
+.hero__text_one {
+  position: relative;
+  left: 155px;
+  top: 30px;
+}
+
+.hero__text_two {
+  position: relative;
+  left: 420px;
+  bottom: 20px;
+}
+
+.hero__text_three {
+  position: relative;
+  left: 102px;
+  bottom: 211px;
+}
+
+.hero__text_four {
+  position: relative;
+  left: 464px;
+  bottom: 243px;
+}
+
+.hero__text_five {
+  position: relative;
+  left: 343px;
+  bottom: 209px;
+}
+
+/*=========================== PRODUCTS ===========================*/
+.products {
+  padding: 0 60px 0 58px;
+  margin-top: 98px;
+  position: relative;
+  margin-bottom: 200px;
+}
+
+.products__hat {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.products__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+}
+
+.products__text {
+  padding: 86px 0;
+  max-width: 465px;
+  font-family: RussianRail G Pro, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.products__text_span {
+  padding: 3px 6px 3px 2px;
+  background: #E8331A;
+  color: #ffffff;
+}
+
+.products__img {
+  position: relative;
+  right: 25px;
+  top: 0;
+}
+
+.products__subtext {
+  position: relative;
+  bottom: 115px;
+  left: 50px;
+  max-width: 425px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.products__circle {
+  position: absolute;
+  left: 150px;
+  top: 1px;
+}
+
+.products__tickets {
+  position: relative;
+}
+
+.product__ticket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  left: 203px;
+  bottom: 16px;
+}
+
+.products__contents {
+  font-family: RussianRail G Pro, sans-serif;
+  font-weight: 700;
+  font-size: 63px;
+  line-height: 119%;
+}
+
+.products__content {
+  max-width: 196px;
+  font-weight: 400;
+  font-size: 24.4645px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.products__case {
+  position: relative;
+  right: 50px;
+  top: 291px;
+}
+
+/*===================*/
+.products__line {
+  position: absolute;
+  right: 42px;
+  top: 5px;
+  z-index: 0;
+}
+
+/*===================*/
+/*=========================== REVIEWS ===========================*/
+
+.reviews {
+  margin-top: 270px;
+  padding: 0 60px 0 58px;
+}
+
+.reviews__title {
+  max-width: 430px;
+  font-family: RussianRail G Pro, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.reviews__block {
+  position: relative;
+  margin: 62px 0 46px 0;
+  background: rgba(245, 245, 245, 0.6);
+  mix-blend-mode: normal;
+  box-shadow: 0px 20px 30px rgba(49, 49, 49, 0.11), inset 0px -10px 10px rgba(181, 181, 181, 0.36), inset 0px 20px 20px rgba(255, 255, 255, 0.59);
+  backdrop-filter: blur(6.5px);
+  border-radius: 32.5187px;
+  z-index: 2;
+}
+
+.reviews__quotes {
+  position: relative;
+  left: 39px;
+  bottom: 15px;
+}
+
+.reviews__subtitle {
+  padding: 15px 23px 61px 63px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.reviews__contents {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.reviews__text {
+  font-family: RussianRail G Pro, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+}
+
+.reviews__subtext {
+  padding-top: 4px;
+  max-width: 235px;
+  font-family: RussianRail G Pro, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+/*=========================== CONSUMER ===========================*/
+
+.consumer {
+  padding: 0 60px 0 58px;
+  max-width: 526px;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 95px;
+  position: relative;
+}
+
+.consumer__title {
+  position: relative;
+}
+
+.consumer__name {
+  font-family: RussianRail G Pro, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 27px;
+}
+
+.consumer__line {
+  position: absolute;
+  right: 310px;
+  bottom: 1px;
+}
+
+.consumer__text {
+  font-family: 'RussianRail G Pro Bold', sans-serif;
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 51px;
+  text-align: center;
+  color: #E8331A;
+  border: 4px solid #E8331A;
+  border-radius: 39px;
+  padding: 8px 20px;
+}
+
+.consumer__subtext {
+  width: 480px;
+  margin-top: 18px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+}
+
+.consumer__subtext_two {
+  width: 430px;
+}
+
+.consumer__footer {
+  margin-top: 85px;
+  position: relative;
+}
+
+.consumer__suitcase {
+  width: 283px;
+  height: 283px;
+  position: absolute;
+  left: 300px;
+  bottom: -11px;
+}
+
+.consumer__marketing {
+  width: 425px;
+  height: 425px;
+  position: absolute;
+  left: 252px;
+  bottom: 592px;
+}
+
+/*===================*/
+.consumer__vector {
+  position: absolute;
+  right: -29px;
+  bottom: 91px;
+}
+
+/*===================*/
+
+/*=========================== DETAILS ===========================*/
+
+.details {
+  padding: 0 60px 0 58px;
+  max-width: 586px;
+  display: flex;
+  flex-direction: column;
+  gap: 105px;
+}
+
+.details__blocks {
+  display: flex;
+  gap: 103px;
+  position: relative;
+}
+
+.details__numbers {
+  background: #F5F5F5;
+  box-shadow: -25.8032px -25.8032px 58.6436px #FFFFFF, 25.8032px 30.4947px 58.6436px rgba(214, 214, 214, 0.738227), inset 16.4202px 11.7287px 25.8032px rgba(191, 191, 191, 0.04);
+  border-radius: 147.782px;
+}
+
+.details__number {
+  font-weight: 600;
+  font-size: 81px;
+  line-height: 95px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #303030;
+  opacity: 0.3;
+  padding: 55px 54px 49px 52px;
+}
+
+.details__title {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+
+.details__text {
+  font-family: 'RussianRail G Pro', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+}
+
+.details__subtext {
+  width: 279px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  padding: 23px 0 17px 0;
+}
+
+.details__button {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+  background: #E8331A;
+  border: 3px solid #E8331A;
+  border-radius: 56px;
+  padding: 8px 23px 7px 23px;
+  cursor: pointer;
+}
+
+.details__button:hover {
+  border: 3px solid #E8331A;
+  color: #E8331A;
+  background: #FFFFFF;
+}
+
+.details__ticket {
+  position: absolute;
+  left: 454px;
+  bottom: 172px;
+}
+
+/*===================*/
+.details__vector {
+  position: absolute;
+  right: 208px;
+  top: -59px;
+}
+
+/*===================*/
+
+/*=========================== QUESTIONS ===========================*/
+
+.questions {
+  padding: 0 60px 0 58px;
+  max-width: 586px;
+  margin-top: 160px;
+}
+
+.questions__label {
+  display: flex;
+  flex-direction: column;
+  gap: 6.8px;
+  font-family: 'RussianRail G Pro', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.questions__select {
+  width: 582px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  padding: 8px 13px 8px 13px;
+  border: 0.4px solid #E7E7E7;
+  border-radius: 4.53624px;
+  outline-color: #E7E7E7;
+}
+
+.questions__select:focus {
+  outline-color: #E7E7E7;
+  border: 1px solid #E7E7E7;
+}
+
+.questions__select:active {
+  outline-color: #E7E7E7;
+  border: 1px solid #E7E7E7;
+}
+
+.questions__select_top {
+  margin-top: 18px;
+}
+
+.questions__option {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+}
+
+/*=== select style ===*/
+select {
+  *background: transparent;
+  width: 268px;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 34px;
+  -webkit-appearance: none;
+}
+
+select {
+  appearance: none;
+  overflow: hidden;
+  background-image: url(./img/questions/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 97% 50%;
+  background-size: 10px;
+}
+
+/*=== select style ===*/
+
+/*=========================== CLIENTS ===========================*/
+
+.form {
+  padding: 0 60px 0 58px;
+  max-width: 586px;
+  margin-top: 93px;
+  position: relative;
+}
+
+.form__fon {
+  width: 586px;
+  background: #F5F5F5;
+  mix-blend-mode: normal;
+  box-shadow: 0px 20px 30px rgba(49, 49, 49, 0.2), inset 0px -10px 10px rgba(181, 181, 181, 0.6), inset 0px 20px 20px #ffffff;
+  border-radius: 32.5187px;
+}
+
+.form__content {
+  padding: 29px 52px 42px 43px;
+}
+
+.form__title {
+  font-family: 'RussianRail G Pro', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.form__subtitle {
+  padding-top: 4px;
+  width: 462px;
+  font-family: 'RussianRail G Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.form__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__labels {
+  display: flex;
+  gap: 21px;
+}
+
+.form__input {
+  margin-top: 23px;
+  width: 148px;
+  border: 0;
+  color: #000000;
+  border-bottom: 1px solid #000000;;
+  background-color: rgba(0, 0, 0, 0);
+  outline: 0;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 130%;
+}
+
+.form__input_text {
+  width: 487px;
+}
+
+.form__footer {
+  margin-top: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/*=== checkbox ===*/
+.form__labelss {
+  font-family: 'RussianRail G Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  max-width: 149px;
+}
+
+.form__labelss .form__checkbox {
+  display: none;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.form__checkboxx {
+  margin: 2px 0 0 0;
+  display: block;
+  height: 8px;
+  width: 12px;
+  background: #E6E6E6;
+  border: 0.507416px solid #707070;
+  border-radius: 1.52225px;
+}
+
+.form__labelss:hover .form__checkbox ~ .form__checkboxx {
+  background-color: #FFFFFF;
+}
+
+.form__labelss .form__checkbox:checked ~ .form__checkboxx {
+  background-color: #FFFFFF;
+}
+
+.form__labelss .form__checkbox:checked ~ .form__checkboxx:after {
+  display: block;
+}
+
+.form__labelss {
+  display: flex;
+  position: relative;
+  gap: 5px;
+  width: 100%;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.form__checkboxx:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.form__labelss .form__checkboxx:after {
+  left: 2px;
+  top: 3px;
+  width: 3.28px;
+  height: 5px;
+  border: solid #008E1F;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*=== checkbox ===*/
+
+.form__button {
+  font-family: 'RussianRail G Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background: #E8331A;
+  border: 3px solid #E8331A;
+  border-radius: 10px;
+  padding: 8px 22px 7px 22px;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  background: #F5F5F5;
+  color: #E8331A;
+  border: 3px solid #E8331A;
+}
+
+/*=========================== NEWS ===========================*/
+
+.news {
+  margin: 72px 0px 0px 349px;
+  position: relative;
+}
+
+.news__fon {
+  background: #FFFFFF;
+  width: 635px;
+}
+
+.news__padding {
+  padding: 28px 33px 0px 22px;
+}
+
+.news__name {
+  font-family: 'RussianRail G Pro', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19.8778px;
+  line-height: 20px;
+}
+
+.news__date {
+  margin-top: 32px;
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 9.46562px;
+  line-height: 11px;
+  color: #8A8A8A;
+}
+
+.news__text {
+  font-weight: 700;
+  font-size: 12.4236px;
+  line-height: 136.69%;
+}
+
+.news__subtext {
+  font-weight: 400;
+  font-size: 12.4236px;
+  line-height: 150%;
+}
+
+.news__check {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.news__check_img {
+  width: 56px;
+  height: 13px;
+}
+
+.news__content {
+  display: flex;
+  gap: 17px;
+}
+
+.news__title {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.news__title_star {
+  width: 13px;
+  height: 15px;
+}
+
+.news__more {
+  margin-top: 42px;
+  padding-bottom: 29px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.news__foot {
+  font-weight: 500;
+  font-size: 14.9084px;
+  line-height: 136.69%;
+}
+
+.news__arrow {
+  width: 12px;
+  height: 9px;
+}
+
+/*===================*/
+.news__vector {
+  position: absolute;
+  left: -63px;
+  bottom: -254px;
+  z-index: 0;
+}
+
+/*===================*/
+
+/*=========================== START ===========================*/
+.start {
+  padding: 0 60px 0 58px;
+  /*margin: 146px 0px 0px 349px;*/
+  margin-top: 146px;
+}
+
+.start__content {
+  position: relative;
+  left: 366px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.start__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #000000;
+}
+
+/*=========================== START ===========================*/
+
+.footer {
+  margin-top: 31px;
+  padding-bottom: 27px;
+  background: #555555;
+  position: relative;
+  z-index: 2;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 39px 57px 0px 57px;
+}
+
+.footer__text {
+  padding-top: 4px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+
+.footer__link {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 130%;
+  color: #BFCCFF;
+}
+
+.footer__media {
+  margin-top: 32px;
+  display: flex;
+  gap: 8px;
+}
+
+.footer__author {
+  margin: 51px 0 0 57px;
+}
+
+.footer__subtext {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 6.49444px;
+  line-height: 150%;
+  color: #BCBCBC;
+}
+
+
+/*=========================== POPUP MENU ===========================*/
+
+.head__nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #c1c1c1;
+  width: 100%;
+  height: 350px;
+  display: none;
+  z-index: 5;
+}
+.head__nav_active{
+  display: initial;
+}
+.head__content{
+  padding-top: 34px;
+  padding-right: 1px;
+  display: flex;
+  flex-direction: column;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.head__top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head__right {
+  display: flex;
+  gap: 23px;
+  align-items: center;
+}
+
+.head__button {
+  padding: 10px 20px;
+  background: #E8331A;
+  border-radius: 5px;
+  border: 3px solid #E8331A;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.head__button:hover {
+  background: #F5F5F5;
+  color: #E8331A;
+  border: 3px solid #E8331A;
+}
+
+.head__bottom{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.head__link{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.header__push{
+  background: inherit;
+}
+
+
+
+
+
+
+
+
