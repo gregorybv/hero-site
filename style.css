@@ -917,7 +917,6 @@ select {
 /*=========================== START ===========================*/
 .start {
   padding: 0 60px 0 58px;
-  /*margin: 146px 0px 0px 349px;*/
   margin-top: 146px;
 }
 
@@ -985,7 +984,6 @@ select {
   line-height: 150%;
   color: #BCBCBC;
 }
-
 
 /*=========================== POPUP MENU ===========================*/
 
